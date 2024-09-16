@@ -1,0 +1,199 @@
+/*CSS  Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* navBar */
+#navBar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+/* navBar : Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+/* navBar : List Styling */
+#navBar{
+    background-image: linear-gradient(black,Grey,rgb(44, 43, 43),black);
+}
+#navBar ul{
+    display: flex;
+    font-family: 'Baloo Bhai',sans-serif;
+}
+#navBar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+#navBar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navBar ul li a{
+    color:whitesmoke;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navBar ul li a:hover{
+    color:black;
+    background-color: azure;
+}
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 624px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background-color: black;
+    background:url('../Images/home.jpg')no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+#home h1{
+    color: whitesmoke;
+    font-family: 'Bree Serif',serif;
+    background-image: linear-gradient(black,Grey,rgb(44, 43, 43),black);
+    border: 6px double whitesmoke;
+    border-radius: 9px;
+    text-align: center;
+}
+#home p{
+    color: whitesmoke;
+    font-family: 'Bree Serif',serif;
+    text-align: center;
+    font-size: 1.5rem;
+    border: 6px dashed rgb(39, 37, 37);
+    border-radius: 9px;
+    padding: 12px ;
+    margin: 17px;
+}
+/* products */
+#products-container{
+    margin-top: 54px;
+}
+#products{
+    margin: 24px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#products .box{
+    border: 2px solid black;
+    padding: 34px;
+    margin: 22px 22px;
+    border-radius: 28px;
+    background-color: whitesmoke;
+}
+#products .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+/* services */
+#services{
+    margin: 24px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#services .box{
+    border: 2px solid black;
+    padding: 24px;
+    margin: 42px 42px;
+    border-radius: 28px;
+    background-color: whitesmoke;
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+/* clients */
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 34px;
+}
+#clients img{
+    height: 124px;
+}
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif',serif;
+}
+/* footer section */
+footer{
+    background: black;
+    color: whitesmoke;
+    padding: 12px 100px;
+}
+/* utility classes */
+.h-primary{
+    font-size: 2.8rem;
+    font-family: 'Bree Serif',serif;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 2.3rem;
+    font-family: 'Bree Serif',serif;
+    padding: 12px;
+}
+.p-primary{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif',serif;
+    padding: 12px;
+    background-color: whitesmoke;
+}
+.btn{
+    padding: 4px ;
+    background-image: linear-gradient(black,Grey,rgb(44, 43, 43),black);
+    border: 4px solid whitesmoke;
+    border-radius: 10px;
+    color: whitesmoke;
+    margin: 17px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
